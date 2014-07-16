@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>gribcs</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Seaware.GribCS</RootNamespace>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <ProjectGuid>{FF512132-E6AE-4A88-8240-BC2BD1864569}</ProjectGuid>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <PublishUrl>http://localhost/gribcs/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib">
+      <Name>mscorlib</Name>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Design">
+      <Name>System.Design</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Management">
+      <Name>System.Management</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.Xml</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="grib1\Grib1BinaryDataSection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="grib1\Grib1BitMapSection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="grib1\Grib1Data.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="grib1\Grib1EndSection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="grib1\Grib1Ensemble.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="grib1\Grib1Grid.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="grib1\Grib1GridDefinitionSection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="grib1\Grib1IndicatorSection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="grib1\Grib1Input.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="grib1\Grib1Product.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="grib1\Grib1ProductDefinitionSection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="grib1\Grib1Record.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="grib1\Grib1WaveSpectra2DDirFreq.cs" />
+    <Compile Include="grib1\GribPDSLevel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="grib1\IGrib1BinaryDataSection.cs" />
+    <Compile Include="grib1\IGrib1BitMapSection.cs" />
+    <Compile Include="grib1\IGrib1Data.cs" />
+    <Compile Include="grib1\IGrib1GridDefinitionSection.cs" />
+    <Compile Include="grib1\IGrib1IndicatorSection.cs" />
+    <Compile Include="grib1\IGrib1Input.cs" />
+    <Compile Include="grib1\IGrib1Product.cs" />
+    <Compile Include="grib1\IGrib1ProductDefinitionSection.cs" />
+    <Compile Include="grib1\IGrib1Record.cs" />
+    <Compile Include="grib2\Category.cs" />
+    <Compile Include="grib2\Discipline.cs" />
+    <Compile Include="grib2\Grib2BitMapSection.cs" />
+    <Compile Include="grib2\Grib2Data.cs" />
+    <Compile Include="grib2\Grib2DataRepresentationSection.cs" />
+    <Compile Include="grib2\Grib2DataSection.cs" />
+    <Compile Include="grib2\Grib2EndSection.cs" />
+    <Compile Include="grib2\Grib2GridDefinitionSection.cs" />
+    <Compile Include="grib2\Grib2IdentificationSection.cs" />
+    <Compile Include="grib2\Grib2IndicatorSection.cs" />
+    <Compile Include="grib2\Grib2Input.cs" />
+    <Compile Include="grib2\Grib2LocalUseAdapter.cs" />
+    <Compile Include="grib2\Grib2LocalUseSection.cs" />
+    <Compile Include="grib2\Grib2Product.cs" />
+    <Compile Include="grib2\Grib2ProductDefinitionSection.cs" />
+    <Compile Include="grib2\Grib2Record.cs" />
+    <Compile Include="grib2\IGrib2Data.cs" />
+    <Compile Include="grib2\IGrib2DataRepresentationSection.cs" />
+    <Compile Include="grib2\IGrib2GridDefinitionSection.cs" />
+    <Compile Include="grib2\IGrib2IdentificationSection.cs" />
+    <Compile Include="grib2\IGrib2IndicatorSection.cs" />
+    <Compile Include="grib2\IGrib2Input.cs" />
+    <Compile Include="grib2\IGrib2LocalUseAdapter.cs" />
+    <Compile Include="grib2\IGrib2LocalUseSection.cs" />
+    <Compile Include="grib2\IGrib2Product.cs" />
+    <Compile Include="grib2\IGrib2ProductDefinitionSection.cs" />
+    <Compile Include="grib2\IGrib2Record.cs" />
+    <Compile Include="GribNumbers.cs" />
+    <Compile Include="Jpeg2000Decoder.cs" />
+    <Compile Include="NotSupportedException.cs" />
+    <Compile Include="NoValidGribException.cs" />
+    <Compile Include="Parameter.cs" />
+    <Compile Include="SupportClass.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="grib1\_ConversionReport.htm" />
+    <Content Include="grib1\_ConversionReport_Files\ConversionReport.css" />
+    <Content Include="grib1\_ConversionReport_Files\ConversionReport_Blank.gif" />
+    <Content Include="grib1\_ConversionReport_Files\ConversionReport_Minus.gif" />
+    <Content Include="grib1\_ConversionReport_Files\ConversionReport_Plus.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>copy /y "$(SolutionDir)\JpcDecoder\$(ConfigurationName)\JpcDecoder.dll" "$(TargetDir)"</PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>
